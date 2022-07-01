@@ -11,6 +11,7 @@ hard_pkgs <- c(
 # tidyverse installs all Imports in
 # https://github.com/tidyverse/tidyverse/blob/main/DESCRIPTION
   "tidyverse",
+  "devtools",
   "covr",
   "cpp11",
   "data.table",
@@ -23,7 +24,6 @@ hard_pkgs <- c(
 soft_pkgs <-  c(
 #   "connections",
   "DBI",
-  "devtools",
   "DT",
   "feather",
   "fs",
@@ -36,6 +36,7 @@ soft_pkgs <-  c(
   "knitr",
   "odbc",
   "openxlsx",
+  "rcmdcheck",
   "reticulate",
   "rmarkdown",
   "spelling",
