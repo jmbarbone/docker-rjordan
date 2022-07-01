@@ -19,7 +19,6 @@ RUN apt-get install --assume-yes --no-upgrade \
     libmariadb-dev \
     unixodbc-dev
 
-
 WORKDIR /app
 COPY r-pkgs.R app/r-pkgs.R
 RUN Rscript --vanilla app/r-pkgs.R
