@@ -9,7 +9,6 @@ if (!identical(Sys.getenv("PKG_SYSREQS"), "true")) {
 
 options(
   pak.no_extra_messages = TRUE,
-  # repos = c(CRAN = "https://packagemanager.posit.co/cran/latest", CRAN = "https://cran.rstudio.com/")
   repos = c(CRAN = "https://packagemanager.posit.co/cran/latest")
 )
 
@@ -88,6 +87,7 @@ pkgs <- c(
   "any::openssl@2.0.6",
   "any::packrat@0.9.1",
   "any::pak@0.5.1",
+  "any::palmerpenguins@0.1.1",
   "any::parsedate@1.3.1",
   "any::pillar@1.9.0",
   "any::pingr@2.0.2",
@@ -165,8 +165,6 @@ if (!requireNamespace("pak", quietly = TRUE, lib.loc = lib)) {
     R.Version()$os,
     R.Version()$arch
   ))
-  # msg("pak::pak('pak')")
-  # pak::pak("pak", dependencies = TRUE, lib = lib)
   msg("{pak} successfully installed")
 }
 
